@@ -4,9 +4,9 @@ export default function AboutPage() {
       <section className="space-y-4">
         <h1 className="heading text-4xl font-semibold tracking-tight">About the project</h1>
         <p className="muted max-w-3xl">
-          The Micro-Startup Incubator is designed to make entrepreneurship realistic for students who
+          The Micro-Startup Incubator is designed to make entrepreneurship realistic for students (all ages) who
           don’t have spare money to gamble. The focus is simple: build a small, legitimate offer,
-          speak to real customers, and learn the skills that translate directly into employability.
+          speak to real customers, and learn the skills that translate directly into employability or futher entrepnrenurial success.
         </p>
       </section>
 
@@ -14,8 +14,8 @@ export default function AboutPage() {
         <div className="card">
           <h2 className="heading text-xl font-semibold">Why it matters</h2>
           <ul className="muted mt-3 list-inside list-disc space-y-2 text-sm">
-            <li>Students often want to start, but lack capital and practical guidance.</li>
-            <li>Many programmes prioritise pitch decks over execution and real customers.</li>
+            <li>Students want to start but lack capital and practical guidance.</li>
+            <li>Similar programmes prioritise pitch decks over execution and real customers.</li>
             <li>This pilot removes barriers and builds confidence through action.</li>
           </ul>
         </div>
@@ -23,7 +23,7 @@ export default function AboutPage() {
         <div className="card">
           <h2 className="heading text-xl font-semibold">What success looks like</h2>
           <ul className="muted mt-3 list-inside list-disc space-y-2 text-sm">
-            <li>10–15 students complete the 6-week pilot.</li>
+            <li>10 students complete the 6-week pilot.</li>
             <li>Strong participation in outreach and customer conversations.</li>
             <li>First sales/invoices or validated paid commitments.</li>
             <li>Clear next-step plans and proof-of-work for CVs.</li>
@@ -36,8 +36,8 @@ export default function AboutPage() {
         <p className="muted mt-2 max-w-3xl text-sm">
           This project is being launched as a pilot and requires modest funding for delivery
           infrastructure, participant coordination, and programme materials. I am personally
-          contributing <span className="font-medium text-foreground">£250 of my own savings</span> to demonstrate
-          commitment and reduce reliance on external funding.
+          contributing <span className="font-medium text-foreground">£250 of my own savings</span> to demonstrate my belief and
+          commitment as well as reducing reliance on external funding.
         </p>
 
         <div className="mt-4 grid gap-3 sm:grid-cols-3">

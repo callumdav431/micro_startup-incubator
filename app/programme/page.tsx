@@ -3,7 +3,7 @@ const weeks = [
     week: "Week 1",
     title: "Pick a money-making problem (£0 mindset)",
     bullets: [
-      "Choose an idea constrained by time + cost (no excuses, just constraints)",
+      "Choose an idea constrained by time + cost",
       "Define target user, pain point, and what “success” looks like",
       "Set up a simple landing page + tracking sheet",
     ],
@@ -14,14 +14,14 @@ const weeks = [
     bullets: [
       "Turn skills into an offer people can actually buy",
       "Create 2–3 pricing options (simple, clear, fair)",
-      "Write a short pitch message that doesn’t feel gross",
+      "Write a short pitch message that doesn’t feel disingeniune",
     ],
   },
   {
     week: "Week 3",
     title: "Ethical sales + outreach sprint",
     bullets: [
-      "Learn a repeatable outreach method (DM/email/in-person)",
+      "Learn a repeatable outreach method (DMs/emails/in person)",
       "Roleplay and refine messaging",
       "Run the first outreach sprint and track results",
     ],
@@ -39,18 +39,18 @@ const weeks = [
     week: "Week 5",
     title: "Deliver well + build simple operations",
     bullets: [
-      "Create delivery templates/checklists",
-      "Set up basic admin: scheduling, invoicing, follow-up",
-      "Collect testimonials and proof-of-work",
+      "Create delivery templates and checklists",
+      "Set up basic admin such as scheduling, invoicing, follow-up",
+      "Collect testimonials and proof of work",
     ],
   },
   {
     week: "Week 6",
     title: "Review, iterate, and plan your next 30 days",
     bullets: [
-      "What worked / what didn’t (based on data, not feelings)",
+      "What worked and what didn’t based on the data collected and general thoughts",
       "Improve the offer and outreach plan",
-      "Build a 30-day action plan to continue after the pilot",
+      "Build a 30 day action plan to continue after the pilot",
     ],
   },
 ];
@@ -61,15 +61,15 @@ export default function ProgrammePage() {
       <section className="space-y-4">
         <h1 className="heading text-4xl font-semibold tracking-tight">The 6-week pilot programme</h1>
         <p className="muted max-w-3xl">
-          This is a practical incubator for students who want results. We keep it simple: build an
-          offer, talk to real people, make your first sale (or learn exactly why not), and leave with
+          This is a practical incubator for students who want results. We'll keep it simple: build an
+          offer, talk to real people, make your first sale, and leave with
           a repeatable system.
         </p>
 
         <div className="grid gap-4 sm:grid-cols-3">
           {[
             { t: "Time commitment", b: "~2 hours/week live + ~2–3 hours/week doing outreach and delivery tasks." },
-            { t: "Cohort size", b: "10–15 students (small enough for support, big enough for momentum)." },
+            { t: "Cohort size", b: "10 students (small enough for support, big enough for momentum)." },
             { t: "Outcomes", b: "Outreach attempted, customer conversations, first sale/invoice, portfolio proof." },
           ].map((x) => (
             <div key={x.t} className="card p-5">

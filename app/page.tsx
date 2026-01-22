@@ -11,7 +11,7 @@ export default function HomePage() {
         </h1>
 
         <p className="muted mt-4 max-w-2xl text-base leading-relaxed">
-          The Micro-Startup Incubator is a practical, access-first programme helping students build
+          The Micro-Startup Incubator is a programme helping students build
           small income generating businesses with minimal upfront costs.
         </p>
 
@@ -31,17 +31,15 @@ export default function HomePage() {
         <h2 className="heading text-base font-semibold">What counts as a “micro-startup” here?</h2>
 
         <p className="muted mt-3 max-w-3xl text-sm leading-relaxed">
-          Think service-based and digital: tutoring, editing, design, social media services, niche
-          research, local business support, simple digital products—things you can validate quickly
-          without big risk.
+          Both service based and digital: tutoring, editing, design, social media services, local business support, simple digital products:  things you can validate quickl without a big risk.
         </p>
 
         <div className="mt-5 flex flex-wrap gap-2">
           {[
             "Offer + pricing",
-            "Simple landing page",
+            "Simple and bold landing page",
             "Ethical outreach",
-            "Customer conversations",
+            "Customer communication",
             "Delivery systems",
             "Proof of work",
           ].map((t) => (
