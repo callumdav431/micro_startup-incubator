@@ -1,65 +1,87 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+    <div className="space-y-14">
+      {/* Hero */}
+      <section className="pt-2">
+        <div className="pill">6-week pilot • £0–£500 micro-startups • student-led</div>
+
+        <h1 className="heading mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+          Launch a real micro-startup while you’re still <br className="hidden sm:block" />
+          at uni and academy.
+        </h1>
+
+        <p className="muted mt-4 max-w-2xl text-base leading-relaxed">
+          The Micro-Startup Incubator is a practical, access-first programme helping students build
+          small income generating businesses with minimal upfront costs.
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a href="/apply" className="btn-primary">
+            Apply for the pilot
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <a href="/programme" className="btn-secondary">
+            See the 6-week plan
           </a>
         </div>
-      </main>
+      </section>
+
+      {/* 3 feature cards */}
+      <section className="grid gap-4 sm:grid-cols-3">
+        {[
+          {
+            title: "Built for students without capital",
+            body: "We focus on businesses you can start with £0–£500. No fancy kit required.",
+          },
+          {
+            title: "Outcomes you can measure",
+            body: "Outreach attempted, customer conversations, first sale/invoice, confidence gains.",
+          },
+          {
+            title: "Employability-first",
+            body: "You’ll build proof you can communicate, sell ethically, deliver, and learn fast.",
+          },
+        ].map((c) => (
+          <div key={c.title} className="card">
+            <h3 className="heading text-sm font-semibold">{c.title}</h3>
+            <p className="muted mt-2 text-sm leading-relaxed">{c.body}</p>
+          </div>
+        ))}
+      </section>
+
+      {/* Big card */}
+      <section className="card-lg">
+        <h2 className="heading text-base font-semibold">What counts as a “micro-startup” here?</h2>
+
+        <p className="muted mt-3 max-w-3xl text-sm leading-relaxed">
+          Think service-based and digital: tutoring, editing, design, social media services, niche
+          research, local business support, simple digital products—things you can validate quickly
+          without big risk.
+        </p>
+
+        <div className="mt-5 flex flex-wrap gap-2">
+          {[
+            "Offer + pricing",
+            "Simple landing page",
+            "Ethical outreach",
+            "Customer conversations",
+            "Delivery systems",
+            "Proof of work",
+          ].map((t) => (
+            <span key={t} className="tag">
+              {t}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      {/* Goals */}
+      <section className="space-y-3">
+        <h2 className="heading text-xl font-semibold">Pilot goals</h2>
+        <ul className="muted list-disc space-y-2 pl-5 text-sm">
+          <li>10–15 students complete a structured 6-week programme.</li>
+          <li>80% attempt real outreach and customer conversations.</li>
+        </ul>
+      </section>
     </div>
   );
 }
