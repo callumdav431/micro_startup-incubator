@@ -1,13 +1,13 @@
 export default function HomePage() {
   return (
-    <div className="space-y-14">
+    <div className="space-y-50">
       {/* Hero */}
       <section className="pt-2">
-        <div className="pill">6-week pilot • £0–£500 micro-startups • student-led</div>
+        <div className="pill">6-week pilot • £0-200 micro-startups • student led</div>
 
         <h1 className="heading mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Launch a real micro-startup while you’re still <br className="hidden sm:block" />
-          at uni and academy.
+          Launch a real startup while you’re still <br className="hidden sm:block" />
+          at uni or academy.
         </h1>
 
         <p className="muted mt-4 max-w-2xl text-base leading-relaxed">
@@ -20,33 +20,11 @@ export default function HomePage() {
             Apply for the pilot
           </a>
           <a href="/programme" className="btn-secondary">
-            See the 6-week plan
+            See the 6 week plan
           </a>
         </div>
       </section>
 
-      {/* 3 feature cards */}
-      <section className="grid gap-4 sm:grid-cols-3">
-        {[
-          {
-            title: "Built for students without capital",
-            body: "We focus on businesses you can start with £0–£500. No fancy kit required.",
-          },
-          {
-            title: "Outcomes you can measure",
-            body: "Outreach attempted, customer conversations, first sale/invoice, confidence gains.",
-          },
-          {
-            title: "Employability-first",
-            body: "You’ll build proof you can communicate, sell ethically, deliver, and learn fast.",
-          },
-        ].map((c) => (
-          <div key={c.title} className="card">
-            <h3 className="heading text-sm font-semibold">{c.title}</h3>
-            <p className="muted mt-2 text-sm leading-relaxed">{c.body}</p>
-          </div>
-        ))}
-      </section>
 
       {/* Big card */}
       <section className="card-lg">
@@ -78,8 +56,8 @@ export default function HomePage() {
       <section className="space-y-3">
         <h2 className="heading text-xl font-semibold">Pilot goals</h2>
         <ul className="muted list-disc space-y-2 pl-5 text-sm">
-          <li>10–15 students complete a structured 6-week programme.</li>
-          <li>80% attempt real outreach and customer conversations.</li>
+          <li>10 students complete a structured 6 week programme with the top 3 startups getting funding.</li>
+          <li> 75% attempt real outreach and customer conversations.</li>
         </ul>
       </section>
     </div>
